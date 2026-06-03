@@ -7,6 +7,7 @@ import OutputSettings from "./tabs/OutputSettings";
 import AspectRatio from "./tabs/AspectRatio";
 import ImageQuality from "./tabs/ImageQuality";
 import Sidebar from "./components/Sidebar";
+import Header from "./components/Header";
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(0);
@@ -20,6 +21,8 @@ function App() {
     <ImageQuality formData={formData} setFormData={setFormData} />,
   ];
   return (
+    <>
+    <Header/>
     <div className="min-h-37 flex justify-center pt-32 text-2xl">
       <div className="w-175 min-h-150 border border-purple-500 rounded-3xl p-10 shadow-sm">
         <AnimatePresence mode="wait">
@@ -97,6 +100,7 @@ function App() {
         <Sidebar formData={formData} />
       </motion.div>
     </div>
+    </>
   );
 }
 

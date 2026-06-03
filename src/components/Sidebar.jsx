@@ -3,20 +3,22 @@ import React from "react";
 export default function Sidebar({ formData }) {
   return (
     <div className="h-screen w-80 bg-white border-l border-gray-200 p-6 overflow-y-auto">
-      <h2 className="text-xl font-bold mb-6">Summary</h2>
-      <p className="text-gray-500 text-xs" >Your selections will appear here as you complete each step.</p>
+      <h2 className="text-2xl font-bold mb-6">Summary</h2>
+      <p className="text-gray-500 text-xs gap-4">
+        Your selections will appear here as you complete each step.
+      </p>
 
       {formData.shootType && (
-        <div className="mb-20 mt-5">
-          <h3 className="font-semibold text-purple-700"> ✓ Shoot Type</h3>
+        <div className="border border-purple-200 rounded-2xl mt-3 p-4 mb-4 bg-purple-50">
+          <h3 className="font-semibold text-purple-700"> Shoot Type</h3>
 
           <p>{formData.shootType}</p>
         </div>
       )}
 
       {formData.category && (
-        <div className="mb-4">
-          <h3 className="font-semibold text-purple-700">✓ Product Details</h3>
+        <div className="border border-purple-200 rounded-2xl mt-3 p-4 bg-purple-50">
+          <h3 className="font-semibold text-purple-700"> Product Details</h3>
 
           <p>{formData.category}</p>
           <p>{formData.sku}</p>
@@ -24,8 +26,8 @@ export default function Sidebar({ formData }) {
         </div>
       )}
       {formData.sceneType && (
-        <div className="mb-4">
-          <h3 className="font-semibold text-purple-700">✓ Output Settings</h3>
+        <div className="border border-purple-200 rounded-2xl mt-3 p-4 mb-4 bg-purple-50">
+          <h3 className="font-semibold text-purple-700">Output Settings</h3>
 
           <p>{formData.sceneType}</p>
           <p>{formData.photoCount}</p>
@@ -33,16 +35,16 @@ export default function Sidebar({ formData }) {
       )}
 
       {formData.aspectRatio && (
-        <div className="mb-4">
-          <h3 className="font-semibold text-purple-700">✓ Aspect Ratio</h3>
+        <div className="border border-purple-200 rounded-2xl mt-3 p-4 mb-4 bg-purple-50">
+          <h3 className="font-semibold text-purple-700">Aspect Ratio</h3>
 
           <p>{formData.aspectRatio}</p>
         </div>
       )}
 
       {formData.imageQuality && (
-        <div>
-          <h3 className="font-semibold text-purple-700">✓ Image Quality</h3>
+        <div className="border border-purple-200 rounded-2xl mt-3 p-4 mb-4 bg-purple-50">
+          <h3 className="font-semibold text-purple-700"> Image Quality</h3>
 
           <p>{formData.imageQuality}</p>
         </div>
