@@ -7,7 +7,7 @@ export default function Sidebar({ formData }) {
       <p className="text-gray-500 text-xs" >Your selections will appear here as you complete each step.</p>
 
       {formData.shootType && (
-        <div className="mb-4">
+        <div className="mb-20 mt-5">
           <h3 className="font-semibold text-purple-700"> ✓ Shoot Type</h3>
 
           <p>{formData.shootType}</p>
