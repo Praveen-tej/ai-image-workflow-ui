@@ -97,7 +97,7 @@ function App() {
               ))}
             </div>
             <button
-              disabled={!formData.shootType}
+              disabled={!formData.shootType && currentIndex === tabs.length-1}
               onClick={() => {
                 setDirection(1);
                 setCurrentIndex(currentIndex + 1);
