@@ -26,7 +26,7 @@ export default function AspectRatio({ formData, setFormData }) {
 
   return (
     <>
-      <div className="text-center text-2xl font-medium mb-4">Aspect Ratio</div>
+      <div className="text-center text-2xl font-medium ">Aspect Ratio</div>
 
       <p className="text-center text-gray-500 text-sm mb-8">
         Customize image dimensions for the best visual fit.
@@ -44,11 +44,11 @@ export default function AspectRatio({ formData, setFormData }) {
             key={item.ratio}
             className={
               formData.aspectRatio === item.ratio
-                ? "border-2 border-purple-500 bg-purple-50 rounded-2xl p-6 flex flex-col items-center justify-center cursor-pointer transition-all"
-                : "border border-gray-200 rounded-2xl p-6 flex flex-col items-center justify-center cursor-pointer hover:border-purple-500 transition-all"
+                ? "border-2 border-purple-500 bg-purple-50 rounded-2xl p-4 flex flex-col items-center justify-center cursor-pointer transition-all"
+                : "border border-gray-200 rounded-2xl p-4 flex flex-col items-center justify-center cursor-pointer hover:border-purple-500 transition-all"
             }
           >
-            <div className="w-6 h-6 border-2 border-gray-300 rounded-md mb-4"></div>
+            <div className="w-4 h-4 border-2 border-gray-300 rounded-md mb-4"></div>
 
             <h3 className="font-semibold text-lg">{item.ratio}</h3>
 

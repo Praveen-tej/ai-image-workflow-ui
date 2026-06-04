@@ -22,7 +22,7 @@ export default function ImageQuality({ formData, setFormData }) {
         Optimize quality for crisp visuals and high-resolution output.
       </p>
 
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 gap-3">
         {qualities.map((item) => (
           <div
             onClick={(e) =>
@@ -31,12 +31,12 @@ export default function ImageQuality({ formData, setFormData }) {
             key={item.quality}
             className={
               formData.imageQuality === item.quality
-                ? "border-2 border-purple-500 bg-purple-50 rounded-3xl h-44 flex flex-col justify-center items-center cursor-pointer transition-all"
-                : "border border-gray-200 rounded-3xl h-44 flex flex-col justify-center items-center cursor-pointer hover:border-purple-500 transition-all"
+                ? "border-2 border-purple-500 bg-purple-50 rounded-2xl p-6 flex flex-col justify-center items-center cursor-pointer transition-all"
+                : "border border-gray-200 rounded-3xl p-4 flex flex-col justify-center items-center cursor-pointer hover:border-purple-500 transition-all"
             }
           >
-            <h2 className="text-2xl font-semibold">{item.quality}</h2>
-            <p className="text-gray-400 font-medium mt-3 text-2xl">
+            <h2 className="text-xl font-semibold">{item.quality}</h2>
+            <p className="text-gray-400 font-medium mt-3 text-xl">
               {item.label}
             </p>
           </div>

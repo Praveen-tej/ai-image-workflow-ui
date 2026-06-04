@@ -3,8 +3,8 @@ import React from "react";
 export default function Sidebar({ formData }) {
   return (
     <div className="h-screen w-80 bg-white border-l border-gray-200 p-6 overflow-y-auto">
-      <h2 className="text-2xl font-bold mb-6">Summary</h2>
-      <p className="text-gray-500 text-xs gap-4">
+      <h2 className="text-2xl font-bold mb-2">Summary</h2>
+      <p className="text-gray-500 text-xs ">
         Your selections will appear here as you complete each step.
       </p>
 
